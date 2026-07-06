@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradisi & Upacara Adat Sumedang</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #fff; padding: 20px; line-height: 1.7; }
+        .container { max-width: 900px; margin: auto; }
+        h1 { color: #ff9f43; text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
+
+        .item { display: flex; align-items: center; gap: 30px; margin-bottom: 60px; background: #222; padding: 25px; border-radius: 20px; border: 1px solid #444; transition: 0.3s; }
+        .item:nth-child(even) { flex-direction: row-reverse; }
+        .item:hover { border-color: #ff9f43; }
+        
+        .item img { width: 40%; height: 250px; object-fit: cover; border-radius: 15px; }
+        .text { width: 60%; }
+        .text h2 { color: #ff9f43; margin-bottom: 10px; }
+        
+        .btn-back { display: block; text-align: center; margin: 40px; color: #ff9f43; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .item { flex-direction: column !important; text-align: center; }
+            .item img, .text { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tradisi & Upacara Adat Sumedang</h1>
+
+    <!-- 1. Ngalaksa (Khas Rancakalong) -->
+    <div class="item">
+        <img src="assets/ngalaksa.webp" alt="Ngalaksa">
+        <div class="text">
+            <h2>Ngalaksa (Khas Rancakalong)</h2>
+            <p>Ngalaksa adalah ritual sakral masyarakat agraris di wilayah Rancakalong yang telah diwariskan turun-temurun. Tradisi ini merupakan perwujudan syukur atas panen padi yang melimpah. Prosesnya dimulai dari "ngala pare" (memanen padi) hingga pengolahan tepung beras yang dibuat menjadi laksa. Keunikan tradisi ini terletak pada keterlibatan seluruh lapisan masyarakat dalam prosesi yang penuh nilai gotong royong dan kesantunan, mencerminkan identitas warga Rancakalong yang tetap teguh menjaga adat leluhur di tengah arus modernisasi.</p>
+        </div>
+    </div>
+
+    <!-- 2. Mapag Sri -->
+    <div class="item">
+        <img src="assets/mapagsri.jpg" alt="Mapag Sri">
+        <div class="text">
+            <h2>Mapag Sri (Tradisi Petani Sunda)</h2>
+            <p>Mapag Sri secara harfiah berarti "menjemput padi", sebuah ritual khas petani Sunda untuk menyambut masa panen sebagai anugerah Tuhan. Upacara ini bukan sekadar seremoni, melainkan bentuk apresiasi terhadap alam. Masyarakat akan berkumpul di sawah atau balai desa untuk memanjatkan doa agar hasil panen berkah dan proses pemanenan berjalan lancar. Tradisi ini menanamkan rasa syukur yang dalam serta memupuk solidaritas antar petani, menegaskan bahwa keberhasilan bertani adalah hasil kerja keras yang disertai dengan ridho Sang Pencipta.</p>
+        </div>
+    </div>
+
+    <!-- 3. Perayaan Hari Jadi Sumedang (HJS) -->
+    <div class="item">
+        <img src="assets/harijadisumedang.jpeg" alt="Hari Jadi Sumedang">
+        <div class="text">
+            <h2>Perayaan Hari Jadi Sumedang (HJS)</h2>
+            <p>Peringatan Hari Jadi Sumedang (HJS) adalah tradisi kebanggaan yang mengikat sejarah "Sumedang Larang" dengan kehidupan masa kini. Puncak acara ini biasanya melibatkan kirab mahkota Binokasih yang sangat sakral, melambangkan estafet kepemimpinan dan kebijaksanaan Prabu Geusan Ulun. Tradisi ini menjadi momentum bagi warga untuk berefleksi akan akar sejarah kotanya, memperkuat identitas budaya, serta menjadi ajang berkumpulnya masyarakat dalam semangat persatuan dan kecintaan terhadap tanah kelahiran.</p>
+        </div>
+    </div>
+
+    <!-- 4. Tradisi Nyekar (Ziarah Leluhur) -->
+    <div class="item">
+        <img src="assets/ziarahkemakam.jpg" alt="Nyekar">
+        <div class="text">
+            <h2>Ziarah ke Makam Leluhur</h2>
+            <p>Masyarakat Sumedang memiliki tradisi ziarah yang sangat kental, terutama ke kompleks makam leluhur di Gunung Puyuh. Tradisi "Nyekar" ini dilakukan untuk menghormati jasa para pendahulu, raja, dan tokoh penyebar agama yang berjasa membangun peradaban Sumedang. Dengan melakukan ziarah, masyarakat diingatkan akan hakikat kehidupan, pentingnya memelihara nilai-nilai luhur, dan menjaga warisan moral yang telah ditinggalkan oleh para orang tua pendiri Sumedang masa lampau.</p>
+        </div>
+    </div>
+    <a href="budaya.html" class="btn-back">← Kembali ke Kategori Budaya</a>
+</div>
+<!-- Tambahkan atribut 'autoplay' -->
+<audio id="bg-audio" autoplay loop>
+  <source src="lagu/instrumental-sunda-mix-2022-instrument-sunda-modern_OOBwsBWZ.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Script ini membantu mencoba memaksa play jika browser mengizinkan
+  window.addEventListener('load', () => {
+    const audio = document.getElementById("bg-audio");
+    audio.play().catch(error => {
+      console.log("Autoplay diblokir oleh browser, pengguna harus melakukan klik terlebih dahulu.");
+    });
+  });
+</script>
+
+</body>
+</html>

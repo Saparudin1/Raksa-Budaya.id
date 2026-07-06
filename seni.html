@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seni Pertunjukan</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #fff; padding: 20px; line-height: 1.7; }
+        .container { max-width: 900px; margin: auto; }
+        h1 { color: #ff9f43; text-align: center; margin-bottom: 50px; }
+
+        .seni-item { display: flex; align-items: center; gap: 30px; margin-bottom: 60px; background: #222; padding: 25px; border-radius: 20px; border: 1px solid transparent; transition: 0.3s; }
+        .seni-item:nth-child(even) { flex-direction: row-reverse; }
+        .seni-item:hover { border-color: #ff9f43; }
+        
+        .seni-item img { width: 40%; height: 250px; object-fit: cover; border-radius: 15px; }
+        .seni-text { width: 60%; }
+        .seni-text h2 { color: #ff9f43; margin-bottom: 10px; }
+        
+        .btn-back { display: block; text-align: center; margin: 40px; color: #ff9f43; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .seni-item { flex-direction: column !important; text-align: center; }
+            .seni-item img, .seni-text { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Seni Budaya Sumedang</h1>
+
+    <!-- 1. Tarawangsa -->
+    <div class="seni-item">
+        <img src="assets/tarawangsa.webp" alt="Tarawangsa">
+        <div class="seni-text">
+            <h2>Tarawangsa</h2>
+            <p><b>Filosofi:</b> Salah satu kesenian tertua di Sumedang yang bersifat sakral. Menggunakan alat musik gesek yang disebut tarawangsa dan kecapi, seni ini merupakan ungkapan rasa syukur masyarakat agraris kepada Sang Pencipta atas keberhasilan panen padi.</p>
+        </div>
+    </div>
+
+    <!-- 2. Kuda Renggong -->
+    <div class="seni-item">
+        <img src="assets/kudarenggong.webp" alt="Kuda Renggong">
+        <div class="seni-text">
+            <h2>Kuda Renggong</h2>
+            <p><b>Sejarah:</b> Berasal dari kata "renggong" yang berarti keterampilan. Kuda dilatih untuk menari mengikuti irama musik. Kesenian ini sangat populer sebagai simbol kegembiraan dalam acara khitanan atau penyambutan tamu kehormatan di Sumedang.</p>
+        </div>
+    </div>
+
+    <!-- 3. Jaipong -->
+    <div class="seni-item">
+        <img src="assets/jaipong.jpg" alt="Jaipong">
+        <div class="seni-text">
+            <h2>Jaipong</h2>
+            <p><b>Deskripsi:</b> Tarian khas Jawa Barat yang enerjik dan dinamis. Di Sumedang, Jaipong sering ditampilkan dengan gerak yang lincah, ekspresif, dan berani. Perpaduan antara ketukan kendang yang dominan membuat tarian ini sangat memikat penonton.</p>
+        </div>
+    </div>
+
+    <!-- 4. Pencak Silat -->
+    <div class="seni-item">
+        <img src="assets/pencaksilat.webp" alt="Pencak Silat">
+        <div class="seni-text">
+            <h2>Pencak Silat</h2>
+            <p><b>Sejarah:</b> Bukan sekadar seni bela diri, Pencak Silat di Sumedang sarat akan nilai spiritual dan disiplin. Menggabungkan unsur seni gerak (tari) dan bela diri untuk pertahanan diri serta menjaga keseimbangan antara fisik dan mental.</p>
+        </div>
+    </div>
+
+    <!-- 5. Wayang Golek -->
+    <div class="seni-item">
+        <img src="assets/wayanggolek.jpg" alt="Wayang Golek">
+        <div class="seni-text">
+            <h2>Wayang Golek</h2>
+            <p><b>Deskripsi:</b> Pertunjukan boneka kayu yang dipimpin oleh seorang dalang. Di Sumedang, cerita yang dibawakan sering kali disisipi dengan humor dan pesan moral yang relevan dengan kehidupan masyarakat saat ini, menjadikannya media komunikasi yang efektif.</p>
+        </div>
+    </div>
+
+    <!-- 6. Tari Umbul -->
+    <div class="seni-item">
+        <img src="assets/tariumbul.jpeg" alt="Tari Umbul">
+        <div class="seni-text">
+            <h2>Tari Umbul</h2>
+            <p><b>Sejarah:</b> Tari tradisional yang berasal dari Sumedang. Awalnya tarian ini merupakan bagian dari kegiatan spiritual namun kini berkembang menjadi seni pertunjukan. Dikenal dengan gerakan yang gemulai dan kostum yang khas, mencerminkan estetika kebudayaan Sunda yang luhur.</p>
+        </div>
+    </div>
+
+    <a href="ekonomikreatif.html" class="btn-back">← Kembali ke Halaman Utama</a>
+</div>
+
+</body>
+</html>

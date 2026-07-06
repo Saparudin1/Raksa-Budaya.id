@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Sumedang - Raksa Budaya</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #000; color: white; padding: 80px 20px 100px 20px; }
+        
+        /* Menu Titik-titik */
+        .menu-icon { position: fixed; top: 20px; left: 20px; z-index: 500; cursor: pointer; color: white; font-size: 2rem; }
+        .nav-menu { position: fixed; top: 0; left: -250px; width: 250px; height: 100%; background: rgba(0,0,0,0.95); backdrop-filter: blur(10px); padding: 80px 20px; transition: 0.4s; z-index: 400; }
+        .nav-menu.active { left: 0; }
+        .nav-menu a { display: block; color: white; margin-bottom: 20px; text-decoration: none; font-size: 1.2rem; }
+
+        .header { text-align: center; margin-bottom: 40px; }
+        
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: auto; }
+        .card { background: rgba(255,255,255,0.08); border-radius: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); background: rgba(255,255,255,0.15); }
+        .card img { width: 100%; height: 200px; object-fit: cover; background-color: #333; }
+        
+        .card-content { padding: 20px; }
+        .btn-box { display: flex; gap: 10px; margin-top: 15px; }
+        .btn { padding: 8px 12px; border-radius: 6px; text-decoration: none; font-size: 0.8rem; font-weight: bold; text-align: center; }
+        .btn-detail { background: #e67e22; color: white; }
+        .btn-maps { background: #27ae60; color: white; }
+        .back-btn { position: fixed; bottom: 20px; left: 20px; padding: 12px 25px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 50px; backdrop-filter: blur(5px); z-index: 100; }
+    </style>
+</head>
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">&#9881;</div>
+    <div class="nav-menu" id="nav">
+        <a href="index.html">Beranda</a>
+        <a href="pariwisata.html">Pariwisata</a>
+    </div>
+
+    <div class="header"><h1>Jelajah Wisata Sumedang</h1></div>
+
+    <div class="grid-container">
+        <script>
+            const wisata = [
+                ["Waduk Jatigede", "assets/jatigede.webp", "detail-jatigede.html", "https://maps.app.goo.gl/ykbAx7XeDqrvQmcWA"],
+                ["Gunung Tampomas", "assets/gunung tampomas.webp", "detail-tampomas.html", "https://maps.app.goo.gl/KxgpTsQZECkBZ5cy9"],
+                ["Gunung Kunci", "assets/gunung kunci.jpg", "detail-gunungkunci.html", "https://maps.app.goo.gl/3DzUdKoaPcFnHCkG8"],
+                ["Museum Prabu Geusan Ulun", "assets/museumprabu.jpg", "detail-museum.html", "https://maps.app.goo.gl/CA3ZscNibgGKMjXt9"],
+                ["Alun-Alun Sumedang", "assets/alunalun.webp", "detail-alunalun.html", "https://maps.app.goo.gl/nLiWXBkYgQJJU2Cq8"],
+                ["Gunung Palasari", "assets/gunung palasari.webp", "detail-palasari.html", "https://maps.app.goo.gl/FSUdofnvKBEDHsUk9"],
+                ["Bukit Toga", "assets/bukittoga.jpg", "detail-toga.html", "https://maps.app.goo.gl/N4Q1v3AtdMWDbupD9"],
+                ["Pangjugjugan", "assets/pangjugjugan.jpg", "detail-pangjugjugan.html", "https://maps.app.goo.gl/m4CkFqwvW8FXg4SZ8"],
+                ["Kebun Durian Sangiang Bedil", "assets/sangiangbedil.png", "detail-sangiang.html", "https://maps.app.goo.gl/hu1hLmKTdTUwA69y8"],
+                ["Cipanas Cilengsing", "assets/cipanas.webp", "detail-cipanas.html", "https://maps.app.goo.gl/JgVuy6akdraRmrtE8"],
+                ["Curug Cigorobog", "assets/curuggorobog.webp", "detail-cigorobog.html", "https://maps.app.goo.gl/uiE28qFDViP8dxzV7"],
+                ["Jans Park", "assets/janspark.webp", "detail-janspark.html", "https://maps.app.goo.gl/3RenK8owEZCsHEUW9"],
+            ];
+
+            wisata.forEach(item => {
+                document.write(`
+                    <div class="card">
+                        <img src="${item[1]}" alt="${item[0]}">
+                        <div class="card-content">
+                            <h2>${item[0]}</h2>
+                            <div class="btn-box">
+                                <a href="${item[2]}" class="btn btn-detail">Detail</a>
+                                <a href="${item[3]}" target="_blank" class="btn btn-maps">Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            });
+        </script>
+    </div>
+
+    <a href="index.html" class="back-btn">← Kembali</a>
+
+    <script>
+        function toggleMenu() { document.getElementById("nav").classList.toggle("active"); }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Wisata - Raksa Budaya</title>
+    <style>
+        /* CSS Responsif - Berlaku untuk HP & Laptop */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #000; color: #fff; padding: 20px; line-height: 1.8; }
+        .container { max-width: 800px; margin: auto; }
+
+        h1 { color: #e67e22; font-size: 2.2rem; margin-bottom: 20px; text-align: center; }
+        
+        img { 
+            width: 100%; 
+            height: 300px; /* Tinggi standar */
+            object-fit: cover; 
+            border-radius: 15px; 
+            margin-bottom: 20px;
+        }
+
+        p { 
+            font-size: 1.1rem; 
+            margin-bottom: 20px; 
+            color: #ddd; 
+            text-align: justify; /* Rata kiri-kanan agar rapi */
+        }
+
+        .map-container { margin-top: 30px; }
+        iframe { 
+            width: 100%; 
+            height: 300px; 
+            border-radius: 15px; 
+            border: 0; 
+        }
+
+        .btn-back { 
+            display: block; 
+            text-align: center; 
+            padding: 15px; 
+            background: #e67e22; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            margin-top: 40px; 
+            font-weight: bold;
+        }
+
+        /* Penyesuaian khusus HP */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Judul Wisata -->
+        <h1>TAHURA GUNUNG PALASARI</h1>
+
+        <!-- Gambar Wisata (Ganti [nama].jpg sesuai file di folder assets) -->
+        <img src="assets/gunung palasari.webp" alt="Foto Wisata">
+
+        <!-- Deskripsi Wisata (Ganti dengan teks yang saya berikan sebelumnya) -->
+        <p>
+           Gunung Palasari dulunya merupakan kawasan hutan lindung yang dikelola untuk menjaga kelestarian ekosistem di pusat kota Sumedang. Secara historis, bukit ini sering menjadi tempat pemantauan strategis bagi penguasa lokal karena lokasinya yang tinggi dan berdekatan dengan pusat pemerintahan.
+
+Saat ini, Gunung Palasari dikembangkan sebagai bagian dari kawasan wisata terpadu bersama Gunung Kunci. Fokusnya adalah edukasi pelestarian hutan sekaligus menyediakan akses bagi warga kota untuk menikmati ruang terbuka yang hijau, jauh dari polusi.
+        </p>
+
+        <!-- Tombol Kembali -->
+        <a href="pariwisata.html" class="btn-back">← Kembali ke Daftar</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriya Sumedang</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #fff; padding: 20px; line-height: 1.6; }
+        .container { max-width: 900px; margin: auto; }
+        h1 { color: #ff9f43; text-align: center; margin-bottom: 50px; }
+
+        /* Layout Kriya */
+        .kriya-item { display: flex; align-items: center; gap: 30px; margin-bottom: 60px; background: #222; padding: 20px; border-radius: 20px; }
+        .kriya-item:nth-child(even) { flex-direction: row-reverse; } /* Selang-seling */
+        
+        .kriya-item img { width: 40%; height: 250px; object-fit: cover; border-radius: 15px; }
+        .kriya-text { width: 60%; }
+        .kriya-text h2 { color: #ff9f43; margin-bottom: 10px; }
+        
+        .btn-back { display: block; text-align: center; margin: 40px; color: #ff9f43; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .kriya-item { flex-direction: column !important; text-align: center; }
+            .kriya-item img, .kriya-text { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kriya Unggulan Sumedang</h1>
+
+    <!-- 1. Wayang Golek -->
+    <div class="kriya-item">
+        <img src="assets/wayanggolek2.jpg" alt="Wayang Golek">
+        <div class="kriya-text">
+            <h2>Wayang Golek</h2>
+            <p><b>Sejarah:</b> Wayang Golek di Sumedang memiliki pengaruh kuat dari tradisi kesultanan. Dibuat dari kayu albasiah atau lame, seni ini bukan sekadar pajangan, melainkan media dakwah dan kritik sosial sejak masa kerajaan.</p>
+        </div>
+    </div>
+
+    <!-- 2. Batik Kasumedangan -->
+    <div class="kriya-item">
+        <img src="assets/batikkasumedangan.jpg" alt="Batik Sumedang">
+        <div class="kriya-text">
+            <h2>Batik Kasumedangan</h2>
+            <p><b>Sejarah:</b> Motifnya terinspirasi dari peninggalan Kerajaan Sumedang Larang seperti mahkota Binokasih. Setiap garis dan warna memiliki filosofi kedalaman budaya sunda yang terjaga hingga sekarang.</p>
+        </div>
+    </div>
+
+    <!-- 3. Kerajinan Kayu -->
+    <div class="kriya-item">
+        <img src="assets/kerajinankayu.jpeg" alt="Kerajinan Kayu">
+        <div class="kriya-text">
+            <h2>Kerajinan Kayu</h2>
+            <p><b>Penjelasan:</b> Keahlian memahat kayu di Sumedang sudah ada sejak zaman kolonial. Pengrajin lokal memanfaatkan limbah kayu jati atau mahoni untuk membuat miniatur, perabot, hingga hiasan dinding yang sangat detail.</p>
+        </div>
+    </div>
+
+    <!-- 4. Gobang Cikeruh -->
+    <div class="kriya-item">
+        <img src="assets/gobangcikeruh.jpg" alt="Gobang Cikeruh">
+        <div class="kriya-text">
+            <h2>Gobang Cikeruh</h2>
+            <p><b>Sejarah:</b> Dikenal sebagai senjata khas dari daerah Cikeruh, Jatinangor. Gobang ini sangat melegenda karena kualitas baja dan proses penempaan yang dilakukan secara tradisional oleh pandai besi ahli turun-temurun.</p>
+        </div>
+    </div>
+
+    <a href="ekonomikreatif.html" class="btn-back">← Kembali ke Halaman Utama</a>
+</div>
+
+</body>
+</html>

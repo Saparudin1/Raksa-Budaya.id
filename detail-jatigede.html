@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Wisata - Raksa Budaya</title>
+    <style>
+        /* CSS Responsif - Berlaku untuk HP & Laptop */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #000; color: #fff; padding: 20px; line-height: 1.8; }
+        .container { max-width: 800px; margin: auto; }
+
+        h1 { color: #e67e22; font-size: 2.2rem; margin-bottom: 20px; text-align: center; }
+        
+        img { 
+            width: 100%; 
+            height: 300px; /* Tinggi standar */
+            object-fit: cover; 
+            border-radius: 15px; 
+            margin-bottom: 20px;
+        }
+
+        p { 
+            font-size: 1.1rem; 
+            margin-bottom: 20px; 
+            color: #ddd; 
+            text-align: justify; /* Rata kiri-kanan agar rapi */
+        }
+
+        .map-container { margin-top: 30px; }
+        iframe { 
+            width: 100%; 
+            height: 300px; 
+            border-radius: 15px; 
+            border: 0; 
+        }
+
+        .btn-back { 
+            display: block; 
+            text-align: center; 
+            padding: 15px; 
+            background: #e67e22; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            margin-top: 40px; 
+            font-weight: bold;
+        }
+
+        /* Penyesuaian khusus HP */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Judul Wisata -->
+        <h1>WADUK JATIGEDE</h1>
+
+        <!-- Gambar Wisata (Ganti [nama].jpg sesuai file di folder assets) -->
+        <img src="assets/jatigede.webp" alt="Foto Wisata">
+
+        <!-- Deskripsi Wisata (Ganti dengan teks yang saya berikan sebelumnya) -->
+        <p>
+           "Waduk Jatigede merupakan salah satu waduk terbesar di Indonesia sekaligus kebanggaan masyarakat Jawa Barat. Terletak di Kabupaten Sumedang, bendungan ini membendung aliran Sungai Cimanuk yang legendaris. Lebih dari sekadar fungsi teknis untuk irigasi dan pembangkit listrik, Jatigede telah bertransformasi menjadi magnet wisata baru. Di sini, pengunjung dapat menikmati pemandangan perairan luas yang dikelilingi perbukitan hijau, berwisata perahu, hingga berziarah ke situs-situs bersejarah yang terangkat dari dasar waduk. Suasana senja di tepian waduk ini sering dianggap sebagai salah satu yang paling eksotis di Sumedang."
+        </p>
+        
+        
+
+        <!-- Google Maps -->
+        <div class="map-container" style="text-align: center; margin-top: 30px;">
+    <h3>Lokasi di Peta</h3>
+    <a href="https://maps.app.goo.gl/ykbAx7XeDqrvQmcWA" target="_blank" 
+       style="display: inline-block; padding: 15px 30px; background: #27ae60; color: white; text-decoration: none; border-radius: 50px; font-weight: bold;">
+       📍 Lihat Lokasi di Google Maps
+    </a>
+</div>
+        <!-- Tombol Kembali -->
+        <a href="pariwisata.html" class="btn-back">← Kembali ke Daftar</a>
+    </div>
+
+</body>
+</html>

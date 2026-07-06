@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seni Tradisional Sumedang</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #fff; padding: 20px; line-height: 1.7; }
+        .container { max-width: 900px; margin: auto; }
+        h1 { color: #ff9f43; text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
+
+        .item { display: flex; align-items: center; gap: 30px; margin-bottom: 60px; background: #222; padding: 25px; border-radius: 20px; border: 1px solid #444; transition: 0.3s; }
+        .item:nth-child(even) { flex-direction: row-reverse; }
+        .item:hover { border-color: #ff9f43; }
+        
+        .item img { width: 40%; height: 250px; object-fit: cover; border-radius: 15px; }
+        .text { width: 60%; }
+        .text h2 { color: #ff9f43; margin-bottom: 10px; }
+        
+        .btn-back { display: block; text-align: center; margin: 40px; color: #ff9f43; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .item { flex-direction: column !important; text-align: center; }
+            .item img, .text { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Seni Tradisional Sumedang</h1>
+
+    <!-- 1. Kuda Renggong -->
+    <div class="item">
+        <img src="assets/kudarenggong2.jpg" alt="Kuda Renggong">
+        <div class="text">
+            <h2>Kuda Renggong</h2>
+            <p>Ikon seni pertunjukan Sumedang di mana kuda dilatih untuk menari mengikuti irama musik. Bukan sekadar hiburan, Kuda Renggong adalah simbol kebahagiaan masyarakat dalam merayakan momen penting seperti khitanan.</p>
+        </div>
+    </div>
+
+    <!-- 2. Bangreng -->
+    <div class="item">
+        <img src="assets/bangreng.jpeg" alt="Bangreng">
+        <div class="text">
+            <h2>Bangreng</h2>
+            <p>Singkatan dari "Terbang" dan "Ronggeng". Kesenian ini memadukan musik terbang (rebana) yang ritmis dengan tari ronggeng yang memikat. Bangreng memiliki karakter yang kuat dan sering menampilkan sisi magis serta interaksi antara penari dan penonton yang sangat dinamis.</p>
+        </div>
+    </div>
+
+    <!-- 3. Ketuk Tilu Cikeruhan -->
+    <div class="item">
+        <img src="assets/ketutilucikeruhan.jpeg" alt="Ketuk Tilu Cikeruhan">
+        <div class="text">
+            <h2>Ketuk Tilu Cikeruhan</h2>
+            <p>Ketuk Tilu versi Cikeruhan adalah salah satu akar kesenian Sunda yang sangat otentik. Menggunakan instrumen tiga buah ketuk (gong kecil), kesenian ini melahirkan tarian yang penuh keanggunan. Cikeruhan dikenal sebagai salah satu pusat pelestari gaya tradisional yang mempertahankan pakem-pakem asli dari masa ke masa.</p>
+        </div>
+    </div>
+
+    <!-- 4. Bingbrek -->
+    <div class="item">
+        <img src="assets/bingbrek.jpg" alt="Bingbrek">
+        <div class="text">
+            <h2>Bingbrek</h2>
+            <p>Seni tradisional yang unik dan khas dari wilayah Sumedang. Bingbrek biasanya melibatkan perpaduan suara vokal dan instrumen yang sederhana namun memiliki harmonisasi yang kuat. Kesenian ini mencerminkan kreativitas masyarakat pedesaan dalam mengolah seni pertunjukan yang merakyat namun tetap memiliki nilai estetika tinggi.</p>
+        </div>
+    </div>
+
+    <!-- 5. Tari Jayegrana -->
+    <div class="item">
+        <img src="assets/tarijayegrana.jpg" alt="Tari Jayegrana">
+        <div class="text">
+            <h2>Tari Jayegrana</h2>
+            <p>Tari Jayegrana adalah karya seni tari klasik yang syarat dengan nilai heroik. Tarian ini biasanya menggambarkan sosok kesatria yang gagah berani. Gerakan yang tegas, tatapan mata yang tajam, dan iringan musik yang megah membuat tarian ini menjadi simbol kekuatan dan kehormatan bagi masyarakat Sumedang.</p>
+        </div>
+    </div>
+
+    <!-- 6. Tari Umbul -->
+    <div class="item">
+        <img src="assets/tariumbul.jpeg" alt="Tari Umbul">
+        <div class="text">
+            <h2>Tari Umbul</h2>
+            <p>Tari Umbul adalah seni pertunjukan khas Sumedang yang tumbuh dari akar spiritual namun berevolusi menjadi seni tari yang penuh estetika. Gerakannya yang gemulai mencerminkan keanggunan budaya Sunda, dengan nama "umbul" yang sering dimaknai sebagai simbol harapan yang melambung tinggi.</p>
+        </div>
+    </div>
+
+    <!-- 7. Tarawangsa -->
+    <div class="item">
+        <img src="assets/tarawangsa2.jpg" alt="Tarawangsa">
+        <div class="text">
+            <h2>Tarawangsa</h2>
+            <p>Seni sakral yang menggunakan alat musik gesek kuno dan kecapi. Tarawangsa adalah media dialog batin antara manusia dengan Sang Pencipta, sering ditampilkan sebagai bentuk syukur masyarakat atas hasil panen padi.</p>
+        </div>
+    </div>
+
+    <a href="budaya.html" class="btn-back">← Kembali ke Kategori Budaya</a>
+</div>
+<!-- Tambahkan atribut 'autoplay' -->
+<audio id="bg-audio" autoplay loop>
+  <source src="lagu/instrumental-sunda-mix-2022-instrument-sunda-modern_OOBwsBWZ.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Script ini membantu mencoba memaksa play jika browser mengizinkan
+  window.addEventListener('load', () => {
+    const audio = document.getElementById("bg-audio");
+    audio.play().catch(error => {
+      console.log("Autoplay diblokir oleh browser, pengguna harus melakukan klik terlebih dahulu.");
+    });
+  });
+</script>
+
+</body>
+</html>

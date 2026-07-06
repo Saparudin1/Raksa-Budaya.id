@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksa Budaya</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { height: 100%; font-family: 'Segoe UI', sans-serif; overflow: hidden; background-color: #000; }
+
+        /* Layar Overlay untuk memastikan Musik Autoplay */
+        #overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: rgba(0,0,0,0.9); color: white; display: flex; 
+            justify-content: center; align-items: center; z-index: 1000; 
+            cursor: pointer; text-align: center;
+        }
+
+        /* Ikon Menu (Titik-titik) */
+        .menu-icon { position: fixed; top: 20px; left: 20px; z-index: 500; cursor: pointer; color: white; font-size: 2rem; }
+        
+        /* Navigasi Samping */
+        .nav-menu { 
+            position: fixed; top: 0; left: -250px; width: 250px; height: 100%; 
+            background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); 
+            padding: 80px 20px; transition: 0.4s; z-index: 400; 
+        }
+        .nav-menu.active { left: 0; }
+        .nav-menu a { display: block; color: white; margin-bottom: 20px; text-decoration: none; font-size: 1.2rem; }
+
+        /* Hero dengan Background */
+        .hero { 
+            height: 100vh; 
+            /* GANTI 'background.jpg' dengan nama file fotomu yang benar */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/index.jpg') center center/cover no-repeat; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            color: white; text-align: center; padding: 20px; 
+        }
+
+        .animate-text { animation: float 3s ease-in-out infinite; font-size: clamp(2.5rem, 8vw, 5rem); margin-bottom: 20px; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        
+        .summary { max-width: 700px; font-size: clamp(1rem, 2vw, 1.3rem); font-style: italic; margin-bottom: 20px; }
+
+        /* Footer */
+        .footer { position: fixed; bottom: 10px; width: 100%; text-align: center; color: rgba(255,255,255,0.6); font-size: 0.8rem; z-index: 100; }
+    </style>
+</head>
+<body>
+
+    <div id="overlay" onclick="startExperience()"><h1>Klik untuk Masuk ke Raksa Budaya</h1></div>
+
+    <audio id="bg-music" loop><source src="lagu/Sumedang Het Paradij van Java.mp3" type="audio/mpeg"></audio>
+
+    <div class="menu-icon" onclick="toggleMenu()">&#9881;</div>
+    <div class="nav-menu" id="nav">
+        <a href="sejarahsumedang.html">Tentang Sumedang</a>
+        <a href="budaya.html">Budaya</a>
+        <a href="ekonomikreatif.html">Ekonomi Kreatif</a>
+        <a href="pariwisata.html">Pariwisata</a>
+        <a href="keariifanlokal.html">Jelajahi Transformasi</a>
+    </div>
+
+    <div class="hero">
+        <h1 class="animate-text">Raksa Budaya</h1>
+        <div class="summary">
+            <p>Sebuah dedikasi untuk menjaga dan melestarikan kekayaan tradisi, sejarah, serta kearifan lokal Sumedang agar tetap hidup dan relevan di tengah arus modernitas.</p>
+        </div>
+    </div>
+
+    <div class="footer">&copy; 2026 Raksa Budaya. All Rights Reserved.</div>
+
+    <script>
+        function startExperience() {
+            document.getElementById("bg-music").play();
+            document.getElementById("overlay").style.display = "none";
+        }
+        function toggleMenu() {
+            document.getElementById("nav").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Sumedang</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #fff; padding: 20px; line-height: 1.7; }
+        .container { max-width: 900px; margin: auto; }
+        h1 { color: #ff9f43; text-align: center; margin-bottom: 50px; }
+
+        .kuliner-item { display: flex; align-items: center; gap: 30px; margin-bottom: 60px; background: #222; padding: 25px; border-radius: 20px; transition: 0.3s; }
+        .kuliner-item:nth-child(even) { flex-direction: row-reverse; }
+        .kuliner-item:hover { border: 1px solid #ff9f43; }
+        
+        .kuliner-item img { width: 40%; height: 250px; object-fit: cover; border-radius: 15px; }
+        .kuliner-text { width: 60%; }
+        .kuliner-text h2 { color: #ff9f43; margin-bottom: 10px; }
+        
+        .btn-back { display: block; text-align: center; margin: 40px; color: #ff9f43; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .kuliner-item { flex-direction: column !important; text-align: center; }
+            .kuliner-item img, .kuliner-text { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kuliner Khas Sumedang</h1>
+
+    <!-- 1. Tahu Sumedang -->
+    <div class="kuliner-item">
+        <img src="assets/tahu.jpg" alt="Tahu Sumedang">
+        <div class="kuliner-text">
+            <h2>Tahu Sumedang</h2>
+            <p><b>Sejarah:</b> Diperkenalkan oleh Ong Kino, seorang perantau Tionghoa pada awal abad ke-20. Keunikan tahu ini terletak pada penggunaan air tahu yang difermentasi alami, menciptakan tekstur kulit yang renyah setelah digoreng namun tetap lembut dan kenyal di dalam. Wajib disantap panas-panas dengan cabai rawit hijau.</p>
+        </div>
+    </div>
+
+    <!-- 2. Ubi Cilembu -->
+    <div class="kuliner-item">
+        <img src="assets/ubicilembu.jpg" alt="Ubi Cilembu">
+        <div class="kuliner-text">
+            <h2>Ubi Cilembu</h2>
+            <p><b>Fakta:</b> Ubi ini hanya bisa tumbuh dengan karakter manis maksimal di Desa Cilembu, Sumedang. Saat dipanggang, ia mengeluarkan cairan lengket seperti madu. Keunikan tanah vulkanik Sumedang membuat ubi ini menjadi komoditas yang tidak bisa ditiru rasanya di daerah lain.</p>
+        </div>
+    </div>
+
+    <!-- 3. Soto Bongko -->
+    <div class="kuliner-item">
+        <img src="assets/sotobongko.jpg" alt="Soto Bongko">
+        <div class="kuliner-text">
+            <h2>Soto Bongko</h2>
+            <p><b>Deskripsi:</b> Makanan tradisional khas Sumedang yang legendaris. Terdiri dari irisan lontong (bongko) yang disiram kuah kari kental berempah dengan isian tahu, tauge, dan taburan bawang goreng. Rasanya sangat gurih dan kaya akan rempah khas nusantara.</p>
+        </div>
+    </div>
+
+    <!-- 4. Opak Conggeang -->
+    <div class="kuliner-item">
+        <img src="assets/opakconggeang.jpg" alt="Opak Conggeang">
+        <div class="kuliner-text">
+            <h2>Opak Conggeang</h2>
+            <p><b>Proses:</b> Berasal dari wilayah Conggeang, opak ini dibuat dari ketan pilihan yang ditumbuk dan dibumbui kelapa parut. Keistimewaannya terletak pada teknik pembakaran menggunakan bara api kayu bakar yang memberikan aroma khas yang tidak bisa digantikan oleh oven modern.</p>
+        </div>
+    </div>
+
+    <!-- 5. Colenak -->
+    <div class="kuliner-item">
+        <img src="assets/colenak.jpg" alt="Colenak">
+        <div class="kuliner-text">
+            <h2>Colenak</h2>
+            <p><b>Filosofi:</b> Singkatan dari "dicocol enak". Tape singkong (peuyeum) yang dibakar lalu disajikan dengan saus kinca yang terbuat dari campuran gula merah dan parutan kelapa. Ini adalah camilan penghangat suasana yang mencerminkan kesederhanaan masyarakat Sunda.</p>
+        </div>
+    </div>
+
+    <!-- 6. Asinan Sukasari -->
+    <div class="kuliner-item">
+        <img src="assets/asinansukasari.jpg" alt="Asinan Sukasari">
+        <div class="kuliner-text">
+            <h2>Asinan Sukasari</h2>
+            <p><b>Deskripsi:</b> Perpaduan segar buah-buahan dan sayuran lokal yang direndam dalam kuah cuka, gula, dan cabai yang seimbang. Sukasari terkenal dengan racikan kuah asinan yang sangat khas, menggabungkan rasa pedas, asam, dan manis yang membangkitkan selera makan.</p>
+        </div>
+    </div>
+
+    <a href="ekonomikreatif.html" class="btn-back">← Kembali ke Halaman Utama</a>
+</div>
+
+</body>
+</html>

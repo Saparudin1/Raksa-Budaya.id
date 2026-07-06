@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warisan Budaya Sumedang</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #fff; padding: 20px; line-height: 1.7; }
+        .container { max-width: 900px; margin: auto; }
+        h1 { color: #ff9f43; text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
+
+        .item { display: flex; align-items: center; gap: 30px; margin-bottom: 60px; background: #222; padding: 25px; border-radius: 20px; border: 1px solid #444; transition: 0.3s; }
+        .item:nth-child(even) { flex-direction: row-reverse; }
+        .item:hover { border-color: #ff9f43; }
+        
+        .item img { width: 40%; height: 250px; object-fit: cover; border-radius: 15px; }
+        .text { width: 60%; }
+        .text h2 { color: #ff9f43; margin-bottom: 10px; }
+        
+        .btn-back { display: block; text-align: center; margin: 40px; color: #ff9f43; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            .item { flex-direction: column !important; text-align: center; }
+            .item img, .text { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Warisan Budaya Sumedang</h1>
+
+    <!-- 1. Kerajaan Sumedang Larang -->
+    <div class="item">
+        <img src="assets/kerajaansumedang.jpg" alt="Kerajaan Sumedang Larang">
+        <div class="text">
+            <h2>Kerajaan Sumedang Larang</h2>
+            <p>Sumedang Larang adalah pewaris sah kejayaan Kerajaan Pajajaran yang menjadi pusat peradaban tanah Sunda setelah keruntuhan Pajajaran. Kerajaan ini bukan sekadar entitas politik, melainkan simbol ketahanan identitas budaya Sunda. Keberadaannya mengajarkan nilai-nilai luhur kepemimpinan, kedaulatan, dan kearifan lokal yang membentuk watak masyarakat Sumedang yang tangguh namun tetap menjunjung tinggi kehormatan.</p>
+        </div>
+    </div>
+
+    <!-- 2. Mahkota Binokasih Sanghyang Paké -->
+    <div class="item">
+        <img src="assets/mahkotabinokasih.webp" alt="Mahkota Binokasih">
+        <div class="text">
+            <h2>Mahkota Binokasih Sanghyang Paké</h2>
+            <p>Mahkota Binokasih adalah simbol kekuasaan tertinggi di tanah Sunda. Terbuat dari emas murni dan bertahtakan permata, mahkota ini merupakan bukti sejarah perpindahan kekuasaan yang sakral dari Pajajaran ke Sumedang Larang. Bagi masyarakat, mahkota ini bukan sekadar perhiasan kerajaan, melainkan lambang legitimasi kedaulatan yang sangat sakral. Hingga kini, Binokasih menjadi identitas kebanggaan yang mengingatkan akan masa kejayaan peradaban Sunda yang agung.</p>
+        </div>
+    </div>
+
+    <!-- 3. Museum Prabu Geusan Ulun -->
+    <div class="item">
+        <img src="assets/museumprabu.jpeg" alt="Museum Prabu Geusan Ulun">
+        <div class="text">
+            <h2>Museum Prabu Geusan Ulun</h2>
+            <p>Museum Prabu Geusan Ulun berfungsi sebagai penjaga sejarah yang menyimpan berbagai koleksi pusaka, naskah kuno, hingga peralatan kerajaan. Mengambil nama dari penguasa besar Sumedang, museum ini menjadi rumah bagi artefak yang menceritakan perjalanan panjang peradaban Sumedang. Tempat ini menjadi pusat pelestarian dan edukasi agar nilai-nilai luhur dari masa lalu tidak sekadar menjadi cerita, melainkan tetap hidup sebagai inspirasi bagi generasi masa kini.</p>
+        </div>
+    </div>
+
+    <!-- 4. Situs Makam Dayeuh Luhur -->
+    <div class="item">
+        <img src="assets/makamdayeuhluhur.jpg" alt="Situs Dayeuh Luhur">
+        <div class="text">
+            <h2>Situs Makam Dayeuh Luhur</h2>
+            <p>Dayeuh Luhur merupakan kawasan makam para leluhur penguasa Kerajaan Sumedang Larang, termasuk Prabu Geusan Ulun. Lokasi ini dianggap sebagai titik paling sakral dan memiliki atmosfer spiritual yang kuat bagi masyarakat Sumedang. Sebagai pusat peziarahan sejarah, Dayeuh Luhur tidak hanya menjadi tempat untuk menghormati jasa para pendahulu, tetapi juga sebagai refleksi diri akan pentingnya menjaga akar sejarah dan martabat tanah kelahiran.</p>
+        </div>
+    </div>
+
+    <a href="budaya.html" class="btn-back">← Kembali ke Kategori Budaya</a>
+</div>
+<!-- Tambahkan atribut 'autoplay' -->
+<audio id="bg-audio" autoplay loop>
+  <source src="lagu/instrumental-sunda-mix-2022-instrument-sunda-modern_OOBwsBWZ.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Script ini membantu mencoba memaksa play jika browser mengizinkan
+  window.addEventListener('load', () => {
+    const audio = document.getElementById("bg-audio");
+    audio.play().catch(error => {
+      console.log("Autoplay diblokir oleh browser, pengguna harus melakukan klik terlebih dahulu.");
+    });
+  });
+</script>
+
+</body>
+</html>

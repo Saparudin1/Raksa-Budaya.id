@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Budaya Sumedang</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #fff; padding: 20px; }
+        .container { max-width: 900px; margin: auto; text-align: center; }
+        h1 { color: #ff9f43; margin: 40px 0; font-size: 2.5rem; }
+
+        /* WADAH UTAMA DENGAN BACKGROUND FOTO */
+        .category-wrapper { 
+            padding: 40px; border-radius: 30px; 
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/index.jpg'); 
+            background-size: cover; background-position: center;
+            margin-bottom: 50px;
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+
+        /* Card Individu */
+        .card-category { 
+            display: flex; align-items: center; justify-content: center;
+            height: 250px; border-radius: 20px; text-decoration: none;
+            background-size: cover; background-position: center;
+            position: relative; border: 3px solid rgba(255,255,255,0.2);
+            transition: 0.4s; overflow: hidden;
+        }
+        .card-category:hover { transform: scale(1.05); border-color: #ff9f43; }
+        .card-category::after { content: ""; position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+        .card-category h3 { position: relative; z-index: 1; font-size: 1.5rem; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+
+        .btn-back { display: inline-block; padding: 12px 30px; background: #ff9f43; color: #000; border-radius: 50px; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pilih Kategori Budaya</h1>
+        
+        <!-- Wadah ini yang memiliki background foto di belakang semua card -->
+        <div class="category-wrapper">
+            <div class="grid">
+                <a href="budaya-tradisi.html" class="card-category" style="background-image: url('assets/Tradisi\ Sumedang.png');">
+                    <h3>Tradisi & Upacara</h3>
+                </a>
+                
+                <a href="budaya-seni.html" class="card-category" style="background-image: url('assets/tradisisumedang2.png');">
+                    <h3>Seni Tradisional</h3>
+                </a>
+                
+                <a href="budaya-warisan.html" class="card-category" style="background-image: url('assets/tradisisumedang3.png');">
+                    <h3>Warisan Budaya</h3>
+                </a>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn-back">← Kembali ke Halaman Utama</a>
+    </div>
+   <!-- Tambahkan atribut 'autoplay' -->
+<audio id="bg-audio" autoplay loop>
+  <source src="lagu/instrumental-sunda-mix-2022-instrument-sunda-modern_OOBwsBWZ.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Script ini membantu mencoba memaksa play jika browser mengizinkan
+  window.addEventListener('load', () => {
+    const audio = document.getElementById("bg-audio");
+    audio.play().catch(error => {
+      console.log("Autoplay diblokir oleh browser, pengguna harus melakukan klik terlebih dahulu.");
+    });
+  });
+</script>
+
+</body>
+</html>
